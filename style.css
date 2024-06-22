@@ -1,0 +1,646 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+
+@font-face {
+    font-family: 'Franklin Gothic Regular';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Franklin Gothic Regular'), url('FranklinGothic.woff') format('woff');
+    }
+    
+
+    @font-face {
+    font-family: 'Franklin Gothic Condensed';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Franklin Gothic Condensed'), url('FRANKGO.woff') format('woff');
+    }
+    
+
+    @font-face {
+    font-family: 'Franklin Gothic Condensed';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Franklin Gothic Condensed'), url('Franklin Gothic Condensed.woff') format('woff');
+    }
+    
+
+    @font-face {
+    font-family: 'Franklin Gothic ITALIC';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Franklin Gothic ITALIC'), url('FranklinGothicITALIC.woff') format('woff');
+    }
+    
+
+    @font-face {
+    font-family: 'Franklin Gothic ITALIC';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Franklin Gothic ITALIC'), url('fgwo____.woff') format('woff');
+    }
+}
+.container{
+    width: 1348px;
+    background-color: black;  
+    display: flex;
+    flex-direction: row; 
+    justify-content: center;
+    align-items: center;
+
+}
+.content{
+    width: 87%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+
+}
+header{
+    width: 25%;
+}
+.side-bar{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  padding-top: 0px;
+  padding-right: 40px;
+  position: sticky;
+  top: 40px;
+  z-index: 1;
+  ul{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+a{
+    font-weight: 500;
+    font-size: 1.2rem;
+    opacity: 80%;
+}
+a:hover{
+    opacity: 100%;
+}
+}
+.logo{
+    border: 2px solid black;
+    img{
+        height: 45px;
+        width: 45px;
+        padding: 8px;
+        border-radius: 50%;
+    }
+    img:hover{
+        background-color: rgb(41, 40, 40) ;
+    }
+}
+
+.home {
+    list-style-type: none;
+  }
+ 
+.home a{
+    width: 50%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    border-radius: 25px;
+
+  }
+  .home a:hover{
+    background-color: rgb(41, 40, 40) ; 
+  }
+  .explore{
+    list-style-type: none;
+  }
+  .explore a{
+    padding: 10px;
+    width: 60%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 15px;
+    color: white;
+    text-decoration: none;
+    border-radius: 25px;
+  }
+  .explore a:hover{
+    background-color: rgb(41, 40, 40) ; 
+  }
+  .notifications{
+    list-style-type: none;
+  }
+  .notifications a{
+    width: 70%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 15px;
+    color: white;
+    text-decoration: none;
+    border-radius: 25px;
+    padding: 10px;
+  }
+  .notifications a:hover{
+    background-color: rgb(41, 40, 40) ; 
+  }
+  .messages{
+    list-style-type: none;
+  }
+  .messages a{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 65%;
+    gap: 15px;
+    color: white;
+    text-decoration: none;
+    border-radius: 25px;
+    padding: 10px;
+  }
+  .messages a:hover{
+    background-color: rgb(41, 40, 40) ; 
+  }
+.grok{
+   list-style-type: none;
+}
+.grok a{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 50%;
+    gap: 15px;
+    color: white;
+    text-decoration: none;
+    border-radius: 25px;
+    padding: 10px;
+}
+.grok a:hover{
+    background-color: rgb(41, 40, 40) ; 
+}
+  .communities{
+    list-style-type: none;
+  }
+   .communities a{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 15px;
+    width: 75%;
+    color: white;
+    text-decoration: none;
+    border-radius: 25px;
+    padding: 10px;
+   }
+   .communities a:hover{
+    background-color: rgb(41, 40, 40) ; 
+   }
+  .premium{
+    list-style-type: none;
+  }
+
+  .premium a{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 64%;
+    gap: 15px;
+    color: white;
+    text-decoration: none;
+    border-radius: 25px;
+    padding: 10px;
+  }
+  .premium a:hover{
+    background-color: rgb(41, 40, 40) ;
+  }
+
+  .profile{
+   list-style-type: none;
+  }
+   .profile a{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 15px;
+    color: white;
+    text-decoration: none;
+    border-radius: 25px;
+    padding: 10px;
+    width: 55%;
+   
+   }
+   .profile a:hover{
+    background-color: rgb(41, 40, 40) ;
+   }
+  .more a{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 15px;
+    color: white;
+    text-decoration: none;
+  }
+.box{
+    width: 25px;
+    height: 25px;
+    border: 1px solid rgb(192, 185, 185);;
+    border-radius: 50%;
+    padding: 2px;
+    display: flex;
+    flex-direction: row;
+}
+.more{
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+    border-radius: 25px;
+    padding: 10px;
+    width: 50%;
+
+}
+.more:hover{
+    background-color: rgb(41, 40, 40) ;
+}
+.post{
+    background-color: #1D9BF0;
+    height: 50px;
+    margin-top: 5px;
+    font-size: 1rem;
+    font-weight: 600;
+    width: 90%;
+    padding: 15px;
+    border: none;
+    border-radius: 25px;
+    color: white;
+    margin-top: 10px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 41px;
+}
+.login-profile{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: 25px;
+    gap: 15px;
+    padding: 10px;
+    border-radius: 25px;
+}
+.login-profile:hover{
+    background-color: rgb(41, 40, 40) ;
+}
+.left{
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 8px;
+    background-color: blueviolet;
+    p{
+        color: white;
+        font-size: 1.5rem;  
+    }
+}
+.right{
+    display: flex;
+    flex-direction: column;
+    p{
+        color: white; 
+        font-weight: 600;   
+    }
+}
+#id{
+    opacity: 60%;
+    font-size: 0.8rem;
+    font-weight: 100;
+}
+main{
+    width: 75%;
+    justify-content: center;
+}
+.main-content{
+    padding-top: 10px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    gap: 30px;  
+}
+.left1{
+    width: 60%;
+    height: 200px;
+    border-left: 1px solid rgb(82, 81, 81);
+    border-right: 1px solid rgb(82, 81, 81);
+    height: 1000px;
+}
+.top{
+    width: 100%;
+    border-bottom: 1px solid rgb(82, 81, 81);
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.foru{
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 1.1rem;
+}
+.following{
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size:1.1rem;
+    opacity: 60%;
+}
+
+.top2{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+    border-bottom: 1px solid rgb(82, 81, 81);
+    padding-bottom: 10px;
+}
+.login-profile1{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 10px;
+    padding: 10px;
+}
+.left2{
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 8px;
+    background-color: blueviolet;
+    height: 100%;
+    p{
+        color: white;
+        font-size: 1.5rem;  
+    }   
+}
+.right2{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    p{
+        color: white; 
+        font-weight: 600;   
+    }
+}
+#id2{
+    opacity: 60%;
+    font-size: 1.5rem;
+    font-weight: 100;
+    border: none;
+    width: 400px;
+    outline: none;
+    background-color: transparent;
+    color: white;
+}
+.logo12{
+    width: 85%;
+    border: 1px solid white;
+    height: 20px;
+    margin-left: 45px;
+    p{
+        color: white;
+    }
+}
+.search1 {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+}
+
+.search1 input[type="text"] {
+    width: 200px; 
+    padding: 10px;
+    padding-right: 30px; 
+    box-sizing: border-box;
+    background-color: #202327;
+    width: 100%;
+    border:none;
+    border-radius: 30px;
+    font-size: 1rem;
+}
+#input{
+    padding-left: 55px;
+    color: white;
+}
+.search-icon {
+    position: absolute;
+    left: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    pointer-events: none; 
+    width: 18px; 
+    height: 18px; 
+}
+.right-container{   
+width: 40%;
+}
+.right1{
+width: 100%;
+display: flex;
+flex-direction: column;
+gap: 20px;
+}
+.subscribe{
+    border: 1px solid grey;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 15px 0px 12px 17px;
+    h3{
+        color: white;
+        font-size: 1.3rem;
+    }
+    p{
+        margin-top: 5px;
+        color: white;
+    }
+    button{
+        background-color: #1D9BF0;
+        width: 35%;
+        border: 1px solid #1D9BF0;
+        border-radius: 30px;
+        font-size: 1rem;
+        color: white;
+        margin-top: 10px;
+        padding: 8px;
+        font-weight: 600;
+    }
+}
+
+.hapenning{
+    width: 100%;
+    border: 1px solid grey;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    h2{
+        color: white;
+        padding: 7px;
+    }
+}
+.hapenning-content{
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+}
+.content1{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    border-radius: 20px;
+    a{
+        display: flex;
+        flex-direction: row;
+        color: white;
+        text-decoration: none;    
+    }
+    img{
+        padding: 5px;
+        border: none;
+        border-radius: 20px;
+        height: 100px;
+        width: 100px;
+    }
+    .para5{
+        padding-top: 10px;
+        padding-left: 5px; 
+    }
+    .opacity{
+        opacity: 70%;
+    }
+}
+.opacity{
+    font-size: 0.8rem;
+}
+.side-content-buttom{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-top: 10px;
+}
+.content2{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    padding: 13px;
+}
+.para6{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    p{
+        color: white;
+        opacity: 80%;
+        font-size: 0.8rem;
+    }
+    img{
+        opacity: 80%;
+    }
+}
+.heading5{
+    display: flex;
+    flex-direction: column;
+    p{
+        color: white;
+    }
+}
+.tag{
+    font-size: 1.1rem;
+}
+.opacity2{
+    margin-top: 3px;
+    opacity: 80%;
+    font-size: 0.8rem;
+}
+.main-page-content{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    width: 100%;
+    padding: 10px;
+    border-bottom: 1px solid rgb(82, 81, 81);  
+}
+.left3{
+    display: block;
+    padding-top:10px;
+   img{
+    width: 45px;
+    height: 45px;
+    border: none;
+    border-radius: 50%;
+   } 
+}
+.right3{
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    a{
+        color: white;
+        text-decoration: none;
+        gap: 20px;
+    }
+}
+.profile6{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+     align-self: flex-end;
+    justify-content: space-between;
+}
+.para9{
+    margin-top: 10px;
+    ul{
+        li{
+            list-style-type: none;
+            color: white;
+        }
+    }
+}
+.para15{
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+}
+
+/* Franklin Gothic */
